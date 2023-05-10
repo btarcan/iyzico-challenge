@@ -37,7 +37,9 @@ const Detail = () => {
 							<div className='content'>
 								<div className='header'>{name}</div>
 								<div className='meta'>{location.name}</div>
-								<div className='description'>Last 5 Episodes</div>
+								<div className='description'>
+									Last {episodes.length} Episodes
+								</div>
 								{episodes?.map((ep, idx) => {
 									return (
 										<div key={idx} className='meta'>
